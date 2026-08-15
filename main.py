@@ -1,17 +1,7 @@
-import turtle
-from contants import RGB_COLORS
+from turtles.spiral import run_spiral_animation
 
-screen = turtle.Screen()
-screen.title("My Turtle Project")
-screen.tracer(0)
+def main():
+    run_spiral_animation()
 
-t = turtle.Turtle()
-t.speed(0)
-
-for steps in range(100):
-    for c in RGB_COLORS:
-        t.color(c)
-        t.forward(steps)
-        t.right(30)
-
-screen.mainloop()
+if __name__ == "__main__":
+    main()
